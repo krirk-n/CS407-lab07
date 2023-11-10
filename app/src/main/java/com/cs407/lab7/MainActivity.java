@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         NotificationHelper.getInstance().createNotificationChannel(getApplicationContext());
 
         buttonSend.setOnClickListener(view -> {
-            NotificationHelper.getInstance().setNotificationContent(
+            NotificationHelper.getInstance().appendNotificationItem(
                     editTextSender.getText().toString(), editTextMessage.getText().toString()
             );
             NotificationHelper.getInstance().showNotification(getApplicationContext(), -1);

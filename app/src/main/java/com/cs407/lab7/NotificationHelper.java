@@ -60,7 +60,7 @@ public class NotificationHelper {
 
     public void showNotification(Context context, int id) {
         if (ActivityCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS)
-            != PackageManager.PERMISSION_GRANTED) {
+                != PackageManager.PERMISSION_GRANTED) {
             return;
         }
 
