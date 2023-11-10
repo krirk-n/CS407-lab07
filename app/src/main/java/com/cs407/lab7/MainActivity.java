@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             NotificationHelper.getInstance().setNotificationContent(
                     editTextSender.getText().toString(), editTextMessage.getText().toString()
             );
-            NotificationHelper.getInstance().showNotification(getApplicationContext());
+            NotificationHelper.getInstance().showNotification(getApplicationContext(), -1);
         });
     }
 }
